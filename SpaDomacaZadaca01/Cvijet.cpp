@@ -4,12 +4,12 @@
 Cvijet::Cvijet(sf::RenderWindow* window)
 {
 	Window = window;
-	frameClock = sf::Clock();
+	Clock = sf::Clock();
 }
 
 void Cvijet::draw()
 {
-	auto x = (int)(frameClock.getElapsedTime().asSeconds()) % 10;
+	auto x = (int)(Clock.getElapsedTime().asSeconds()) % 10;
 	sf::CircleShape sun(15 + x);
 	sun.setFillColor(sf::Color(255, 255, 0));
 
@@ -26,7 +26,6 @@ void Cvijet::draw()
 	innerFlower.setPosition(sf::Vector2f(120, 120));
 
 	Window->draw(innerFlower);
-
 
 	sf::RectangleShape stem(sf::Vector2f(10, 100));
 	stem.setFillColor(sf::Color(0, 255, 0));

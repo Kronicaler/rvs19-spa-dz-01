@@ -5,7 +5,7 @@ class Cvijet
 {
 private:
 	sf::RenderWindow* Window;
-	sf::Clock frameClock;
+	sf::Clock Clock;
 public:
 	Cvijet(sf::RenderWindow* window);
 
