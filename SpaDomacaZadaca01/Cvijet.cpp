@@ -1,5 +1,4 @@
 #include "Cvijet.h"
-#include <math.h>
 
 Cvijet::Cvijet(sf::RenderWindow* window)
 {
